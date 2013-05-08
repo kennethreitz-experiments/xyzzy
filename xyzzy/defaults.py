@@ -8,6 +8,11 @@ This module contains all of game state's defaults values.
 """
 
 
-data = {}
+data = {
+    # Is the game in over?
+    'active':  True
+}
+
 events = {}
 inventory = {}
+environments = {}

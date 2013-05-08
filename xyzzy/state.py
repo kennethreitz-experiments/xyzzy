@@ -11,11 +11,10 @@ from . import defaults
 
 class GameState(object):
     """Interactive GameState."""
-    def __init__(self, arg):
-        self.data = DEFAULTS.copy()
-        self.events
-        self.inventory =
-        # self.location
+    def __init__(self):
+        self.data = defaults.data.copy()
+        self.events = defaults.events.copy()
+        self.inventory = defaults.inventory.copy()
 
     @classmethod
     def restore(cls, fo):
@@ -23,6 +22,6 @@ class GameState(object):
         g.data
 
     def get(self, key, default):
+        return
 
-
-    def set(self, key, value)
+    # def set(self, key, value)
